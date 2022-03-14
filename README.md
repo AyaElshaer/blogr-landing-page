@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Live Site]()
+- Solution URL: [GitHub](https://github.com/AyaElshaer/blogr-landing-page)
+- Live Site URL: [Live Site](https://blogr-landing-page-black.vercel.app/)
 
 ## My process
 
