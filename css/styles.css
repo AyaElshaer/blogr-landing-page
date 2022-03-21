@@ -21,6 +21,7 @@ body {
   line-height: 1.7;
   font-size: 1.6rem;
   color: var(--paragraph-color);
+  text-transform: capitalize;
 }
 
 h1,
@@ -73,7 +74,6 @@ h3 {
   color: hsl(0, 0%, 100%);
   font-size: 1.6rem;
   font-family: "Overpass", sans-serif;
-  margin-right: 5px;
   font-weight: 600;
 }
 
@@ -83,16 +83,28 @@ h3 {
   gap: 7rem;
 }
 
+.header nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-35%);
+  position: relative;
+  z-index: 999;
+}
+
 .ui.dropdown {
   margin-right: 3rem;
   border-radius: 20px;
+}
+
+.ui.dropdown .arrow {
+  display: inline !important;
 }
 
 .ui.dropdown img {
   width: 1.3rem;
 }
 
-.ui.dropdown:hover img {
+.ui.dropdown.active .arrow-img {
   transform: rotate(180deg);
   transition: all 0.5s;
 }
@@ -216,6 +228,11 @@ h3 {
   color: hsl(0, 0%, 100%);
 }
 
+.intro .get-started .learn:hover {
+  background-color: var(--white);
+  color: hsl(355, 100%, 74%);
+}
+
 /* section */
 
 .sec {
@@ -296,7 +313,7 @@ h3 {
   .design-sec {
     position: relative;
     margin-top: 5rem;
-    padding: 15rem 0;
+    padding: 20rem 0;
     margin-bottom: 10rem;
   }
 
@@ -321,7 +338,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 9rem;
+    padding-left: 10.9rem;
   }
 
   .design-sec .img-container {
@@ -395,11 +412,6 @@ h3 {
   width: 90%;
   display: flex;
   justify-content: center;
-  text-align: center;
-}
-
-.state-of-art .content .title {
-  text-align: center;
 }
 
 .state-of-art .img-container {
@@ -428,12 +440,15 @@ h3 {
   .state-of-art .img-container {
     margin-top: -20rem;
     margin-bottom: -20rem;
+    margin-left: 109px;
     width: 50%;
   }
 
   .state-of-art .content {
     width: 50%;
     margin-left: 2rem;
+    align-items: unset;
+    justify-content: flex-start;
   }
 }
 
@@ -498,6 +513,11 @@ footer p {
   font-size: 1.6rem;
 }
 
+footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 footer .column p:first-child {
   font-weight: 700;
   margin-bottom: 3rem;
@@ -509,16 +529,14 @@ footer .column p:first-child {
     text-align: center;
   }
 
-  .header.header-height {
-    height: 1000px;
-  }
-
   .header h1 {
     font-size: 3.5rem;
   }
+
   .header .intro {
     width: 95%;
   }
+
   .header .intro h2 {
     font-size: 3rem;
     width: 80%;
@@ -556,9 +574,13 @@ footer .column p:first-child {
     text-align: center;
   }
 
+  .ui.dropdown.active header {
+    height: 1000px;
+  }
+
   .ui.dropdown img.dark {
     display: inline;
-    width: 2rem;
+    width: 1.5rem;
   }
 
   .ui.dropdown img.light {
@@ -602,6 +624,10 @@ footer .column p:first-child {
     width: 80%;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--paragraph-color);
+  }
+
+  .header nav .nav-links {
+    transform: unset;
   }
 
   .header .login #sign-up-btn {
