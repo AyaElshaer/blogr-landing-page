@@ -56,17 +56,12 @@ h3 {
   border-radius: 0 0 0 90px;
 }
 
-.header h1 {
-  color: hsl(0, 0%, 100%);
-  font-size: 3.5rem;
-  margin-right: 2rem;
+.logo > img {
+  width: 9rem;
+  margin-top: 1.2rem;
 }
 
 .header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 2rem;
   padding-top: 3rem;
 }
 
@@ -80,13 +75,23 @@ h3 {
 .header nav .nav-items {
   display: flex;
   align-items: center;
-  gap: 7rem;
+  justify-content: center;
 }
 
+.header .logo {
+  width: 15%;
+}
+
+.header .nav-content {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
 .header nav .nav-links {
   display: flex;
   flex-direction: row;
-  transform: translateX(-35%);
+
   position: relative;
   z-index: 999;
 }
@@ -115,6 +120,14 @@ h3 {
 
 .ui.dropdown img.light {
   display: inline;
+}
+
+.ui.floating.dropdown {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  min-width: 0px;
+  align-items: center;
 }
 
 .ui.floating.dropdown > .menu {
@@ -548,12 +561,12 @@ footer .column p:first-child {
     margin: 3rem auto;
   }
 
-  .header nav .nav-items {
+  .header nav .nav-content {
     display: none;
     gap: 3rem;
   }
 
-  .header nav .nav-items.show {
+  .header nav .nav-content.show {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -561,7 +574,7 @@ footer .column p:first-child {
     padding: 2rem;
     position: absolute;
     top: 20%;
-    width: 90%;
+    width: 80%;
     border: 1px solid #eee;
     background-color: var(--white);
     z-index: 10;
@@ -574,8 +587,12 @@ footer .column p:first-child {
     text-align: center;
   }
 
-  .ui.dropdown.active header {
-    height: 1000px;
+  .ui.fluid.dropdown {
+    display: flex;
+    gap: 0.8rem;
+    width: 100%;
+    min-width: 0px;
+    align-items: center;
   }
 
   .ui.dropdown img.dark {
@@ -644,7 +661,7 @@ footer .column p:first-child {
     margin-left: -11px;
   }
 
-  .logo {
+  .header .logo {
     width: 100%;
     display: flex;
     justify-content: space-between;

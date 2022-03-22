@@ -1,4 +1,4 @@
-const navLinks = document.querySelector(".nav-items");
+const navLinks = document.querySelector(".nav-content");
 const dropdowns = document.querySelectorAll(".ui.dropdown");
 const icon = document.querySelector(".icons");
 
