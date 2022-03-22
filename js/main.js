@@ -11,8 +11,9 @@ icon.addEventListener("click", function () {
   hamburger.classList.toggle("hidde");
 
   dropdowns.forEach((dropdown) => {
-    dropdown.classList.remove("floating");
     dropdown.classList.add("fluid");
+    dropdown.classList.remove("floating");
+    
   });
 });
 
