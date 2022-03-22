@@ -58,7 +58,6 @@ h3 {
 
 .logo > img {
   width: 9rem;
-  margin-top: 1.2rem;
 }
 
 .header nav {
@@ -122,13 +121,6 @@ h3 {
   display: inline;
 }
 
-.ui.floating.dropdown {
-  display: flex;
-  gap: 0.8rem;
-  width: 100%;
-  min-width: 0px;
-  align-items: center;
-}
 
 .ui.floating.dropdown > .menu {
   padding: 2rem;
@@ -587,13 +579,12 @@ footer .column p:first-child {
     text-align: center;
   }
 
-  .ui.fluid.dropdown {
+  .link-a{
     display: flex;
-    gap: 0.8rem;
-    width: 100%;
-    min-width: 0px;
+    gap: 5px;
     align-items: center;
   }
+
 
   .ui.dropdown img.dark {
     display: inline;
@@ -629,6 +620,8 @@ footer .column p:first-child {
     font-size: 1.8rem;
     margin-bottom: 0;
   }
+
+
 
   .header nav .nav-links,
   .header nav .login {
