@@ -9,12 +9,7 @@ icon.addEventListener("click", function () {
   navLinks.classList.toggle("show");
   closeBtn.classList.toggle("show");
   hamburger.classList.toggle("hidde");
-
-  dropdowns.forEach((dropdown) => {
-    dropdown.classList.add("fluid");
-    dropdown.classList.remove("floating");
-    
-  });
+  
 });
 
 $(".ui.dropdown").dropdown();

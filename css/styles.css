@@ -125,8 +125,8 @@ h3 {
 .ui.floating.dropdown > .menu {
   padding: 2rem;
   padding-right: 5rem;
-  width: 180px;
   border-radius: 7px !important;
+  width: 100%;
 }
 
 .ui.dropdown .menu .item {
@@ -577,14 +577,8 @@ footer .column p:first-child {
     margin-right: 0;
     margin: 1.5rem 0;
     text-align: center;
+    width: 100%;
   }
-
-  .link-a{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-  }
-
 
   .ui.dropdown img.dark {
     display: inline;
